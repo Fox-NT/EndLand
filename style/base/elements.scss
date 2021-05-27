@@ -1,0 +1,36 @@
+.btn {
+  @include flex(row, center, center);
+  color: $text-white;
+  font-family: $font-text-2;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  padding: 14px 32px;
+  border: none;
+  border-radius: 10px;
+  width: max-content;
+  &.btn--blue {
+    background-color: $background-blue;
+    &:hover {
+      background-color: $background-blue-hover;
+    }
+  }
+  &.btn--green {
+    background-color: $background-green;
+    &:hover {
+      background-color: $background-green-hover;
+    }
+  }
+  &.btn--border-green {
+    border: 1px solid $border-green;
+    &:hover {
+      border-color: $border-green-hover;
+    }
+  }
+  &.btn--border-blue {
+    border: 1px solid $border-blue;
+    &:hover {
+      border-color: $border-blue-hover;
+    }
+  }
+}

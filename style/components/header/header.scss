@@ -1,0 +1,129 @@
+.site-header {
+  font-family: "Gotham Pro", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: $text-white;
+  background: radial-gradient(94.84% 94.84% at 50% 2.78%, #1A3D48 0%, #0E1930 100%), #0E1930;
+  padding-top: 60px;
+  .container {
+    @include flex(column, flex-start, flex-start);
+  }
+  .header {
+    @include flex(row, space-between, center);
+    width: 100%;
+    margin-bottom: 25px;
+    .logo {
+      @include flex(row, flex-start, center);
+      &__img {
+        margin-right: 13px;
+      }
+      &__text {
+        font-family: $font-text;
+      }
+      &__title {
+        margin-bottom: 4px;
+        font-size: 24px;
+        line-height: 23px;
+        font-weight: 400;
+      }
+      &__subtitle {
+        font-size: 16px;
+        line-height: 15px;
+        font-weight: 400;
+      }
+    }
+    &__nav {
+      @include flex(row, flex-end, center);
+    }
+    .nav {
+      margin-right: 52px;
+      &__list {
+        @include flex(row, center, center);
+      }
+      &__item {
+        margin-right: 36px;
+        &:nth-last-child(1) {
+          margin-right: 0;
+        }
+      }
+      &__link {
+        color: $text-white;
+        font-family: $font-text-2;
+        font-weight: 600;
+        line-height: 22px;
+      }
+    }
+    &__btn {
+      @include flex(row, center, center);
+      .btn {
+        margin-right: 16px;
+        padding: 14px 42px;
+        &:nth-last-child(1) {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+  .about {
+    width: 100%;
+    @include flex(row, space-between, center);
+    margin-bottom: 67.5px;
+    &__wrapper {
+      max-width: 500px;
+      width: 100%;
+    }
+    &__btn {
+      @include flex(row, flex-start, center);
+      .btn {
+        padding: 14px 42px;
+        margin-right: 19px;
+        &:nth-last-child(1) {
+          margin-right: 0;
+        }
+      }
+    }
+    .slider {
+      font-family: $font-text-2;
+      &__item {
+        margin-bottom: 24px;
+      }
+      &__title {
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 38.7px;
+        margin-bottom: 23px;
+      }
+      &__subtitle {
+        font-size: 16px;
+        line-height: 22px;
+        font-weight: 400;
+      }
+      &__dots {
+        margin-bottom: 36px;
+        @include flex(row, flex-start, center);
+        .dot {
+          display: block;
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          background-color: $background-grey;
+          margin-right: 8px;
+          cursor: pointer;
+          &:hover {
+            background-color: $background-green-hover;
+          }
+          &.dot--active {
+            background-color: $background-green;
+            cursor: auto;
+            &:hover {
+              background-color: $background-green;
+            }
+          }
+          &:nth-last-child(1) {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+}

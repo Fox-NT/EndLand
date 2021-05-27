@@ -1,0 +1,9 @@
+.card {
+  background: linear-gradient(151.38deg, rgba(34, 45, 68, 0.42) 0.75%, rgba(136, 147, 172, 0) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-sizing: border-box;
+  backdrop-filter: blur(30px);
+  border-radius: 20px;
+}
+
+/*# sourceMappingURL=card.css.map */

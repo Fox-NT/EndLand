@@ -1,0 +1,44 @@
+.card {
+    background: linear-gradient(151.38deg, rgba(34, 45, 68, 0.42) 0.75%, rgba(136, 147, 172, 0) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-sizing: border-box;
+    backdrop-filter: blur(30px);
+    border-radius: 20px;
+    width: max-content;
+    color: $text-white;
+    @include flex (column, center, center);
+    padding: 32px 20px;
+    padding-bottom: 36px;
+    font-family: $font-text;
+    font-weight: 500;
+    &__img {
+        margin-bottom: 35px;
+    }
+    &__title {
+        font-size: 24px;
+        line-height: 23px;
+        margin-bottom: 16px;
+    }
+    &__count {
+        font-size: 20px;
+        line-height: 19px;
+        margin-bottom: 12px;
+        &--current {
+            color: $text-green;
+        }
+        &--max {
+            color: $text-white;
+        }
+    }
+    &__descr {
+        max-width: 235px;
+        width: 100%;
+        text-align: center;
+        font-weight: 400;
+    }
+    &.big-card {
+        padding: 40px 35px;
+    }
+
+
+}
